@@ -3,19 +3,25 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ConfirmDialog from './ch04/ConfirmDialog';
-import WeekendSchedule from './ch04/WeekendSchedule';
-import MyTest1 from './ch04/MyTest1';
-import Tick from './ch04/Tick';
-import CommentList from './ch05/CommentList';
+// import ConfirmDialog from './ch04/ConfirmDialog';
+// import WeekendSchedule from './ch04/WeekendSchedule';
+// import MyTest1 from './ch04/MyTest1';
+// import Tick from './ch04/Tick';
+// import CommentList from './ch05/CommentList';
+import NotiList from './ch06/NotiList';
+import MenuItemList from './ch06/MenuItemList';
+import TestSample from './ch06-3insert_delete/TestSample';
+import TestReview from './ch06-3insert_delete/TestReview';
 
 //const root = ReactDOM.createRoot(document.getElementById('root'));
 
 //root.render(
 
+// 생명주기를 테스트를 하는 코드에서 , React.StrictMode 제거하고 실행하는게 가독성면에서 좋습니다.
+// 수행이 2번씩 일어남.
 ReactDOM.render(
   <React.StrictMode>
-    <CommentList/>
+    <TestReview/>
   </React.StrictMode>,
   document.getElementById('root')
 )
