@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+//import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import ConfirmDialog from './ch04/ConfirmDialog';
 // import WeekendSchedule from './ch04/WeekendSchedule';
 // import MyTest1 from './ch04/MyTest1';
 // import Tick from './ch04/Tick';
 // import CommentList from './ch05/CommentList';
-import NotiList from './ch06/NotiList';
-import MenuItemList from './ch06/MenuItemList';
-import TestSample from './ch06-3insert_delete/TestSample';
-import TestReview from './ch06-3insert_delete/TestReview';
+import TestAfter from './ch07-2-useMemo/TestAfter';
+import TestBefore from './ch07-2-useMemo/TestBefore';
+import BeforeUseCallback from './ch07-3useCallback/BeforeUseCallback';
+import AfterUseCallback from './ch07-3useCallback/AfterUserCallback';
+import TextInputTest from './ch07/TextInputTest';
 
 //const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -21,7 +22,10 @@ import TestReview from './ch06-3insert_delete/TestReview';
 // 수행이 2번씩 일어남.
 ReactDOM.render(
   <React.StrictMode>
-    <TestReview/>
+    {/* <TestBefore/> */}
+    {/* <BeforeUseCallback/> */}
+    {/* <AfterUseCallback/> */}
+    <TextInputTest/>
   </React.StrictMode>,
   document.getElementById('root')
 )
